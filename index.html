@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<title>SLIDER-HTML</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="jquery-3.4.1.js"></script>
+
+<style>
+html
+{
+	background-color:#6b38b8;
+}
+h1
+{
+	width:100%;
+	text-align:center;
+	padding:25px 0;
+	font-family:raleway;
+	color:white;
+}
+body
+{
+	margin:0;
+	padding:0;
+}
+.container
+{
+	width:656px;
+	margin:0 auto;
+}
+
+.cd
+{	
+	width:656px;
+	position:relative;
+	height:369px;
+	
+}
+.a
+{
+	position:absolute;
+	opacity:0
+	z-index:10;
+	width:656px;
+	height:369px;
+	text-align:center;
+}
+.a img
+{
+	width:656px;
+	height:369px;
+	
+	overflow:hidden;
+}
+.a span 
+{
+	background-color : black; 
+	color : white ; 
+	display : block ; 
+	position : absolute ; 
+	bottom : 0 ; 
+	width : 100% ; 
+	left : 0px ; 
+	padding : 15px 0px 15px 0; 
+	text-transform : uppercase ; 
+	font-size : 24px ; 
+	overflow : hidden ;
+	opacity:0.4;
+}
+.active
+{
+	opacity:1;
+	transition: opacity 1s ease;
+	z-index:11;
+}
+.contBtns
+	{
+		text-align:center;
+		text-transform:uppercase;
+		
+	}
+	.contBtns a
+	{
+		cursor:pointer;
+		display:inline-block;
+		padding:8px;
+		
+		border-radius:25px;
+		margin:50px 5px;
+		width:200px;
+		
+		font-size:18px;
+		color:#6b38b8;
+		background-color:#ffe484;
+		font-weight:900;
+	}
+@media(max-width:768px)
+{
+	.container
+	{
+		width:460px;
+		height:260px;
+	}
+	.cd
+	{
+		width:460px;
+		height:260px;
+	}
+	.a
+	{
+		width:460px;
+		height:260px;
+		margin:0 auto;
+	}
+	.a img
+	{
+		width:460px;
+		height:260px;
+	}
+}
+</style>
+</head>
+<body>
+	<h1>jQUERY GALLERY</h1>
+	<div class="container">
+		<div class="cd">
+			<div class="a active">
+				<img src="slider-1-images-29.11.2022/1.jpg">
+				<span>IMAGE 1</span>
+			</div>
+			<div class="a">
+				<img src="slider-1-images-29.11.2022/2.jpg">
+				<span>IMAGE 2</span>
+			</div>
+			<div class="a">
+				<img src="slider-1-images-29.11.2022/3.jpg">
+				<span>IMAGE 3</span>
+			</div>
+			<div class="a">
+				<img src="slider-1-images-29.11.2022/4.jpg">
+				<span>IMAGE 4</span>
+			</div>
+			<div class="a">
+				<img src="slider-1-images-29.11.2022/5.jpg">
+				<span>IMAGE 5</span>
+			</div>
+			<div class="a">
+				<img src="slider-1-images-29.11.2022/6.jpg">
+				<span>IMAGE 6</span>
+			</div>
+			<div class="a">
+				<img src="slider-1-images-29.11.2022/7.jpg">
+				<span>IMAGE 7</span>
+			</div>
+			<div class="a">
+				<img src="slider-1-images-29.11.2022/8.jpg">
+				<span>IMAGE 8</span>
+			</div>
+		</div>
+		<div class="contBtns">
+			<a class="prevBtn">&#8592; Prev image</a>
+			<a class="nxtBtn">Next image &rarr;</a>
+		</div>
+	</div>	
+	<script src="app.js"></script>
+</body>
+</html>
